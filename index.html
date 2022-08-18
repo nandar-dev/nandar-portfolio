@@ -23,7 +23,6 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -42,7 +41,6 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -82,12 +80,12 @@
 
         <div class="scroll-down">
             <a href="#about">
-                <i class="uil uil-mouse-alt scroll-icon"></i>
-                <span>Scroll Down</span>
+                <div class="mouse">
+                    <div class="roll"></div>
+                    <div class="rollshadow"></div>
+                </div>
             </a>
         </div>
-
-
 
     </section>
 
@@ -98,13 +96,15 @@
             <h2>About Me</h2>
         </div>
         <div class="about-container">
+
             <div data-aos="fade-up" class="dev-info-card">
+
                 <div class="profile-content">
                     <img class="dev-img" src="assets/images/nd.jpg" width="100%" height="100%" alt="Nandar's Image">
                 </div>
                 <div class="details-content">
                     <h3>Full-Stuck Developer</h3>
-    
+
                     <div class="dev-details">
                         <h4 class="details"> Details</h4>
                         <div class="details-title">Name:</div>
@@ -112,17 +112,22 @@
                         <div class="details-title">Age:</div>
                         <div class="details-info">22 years</div>
                         <div class="details-title">Location:</div>
-                        <div class="details-info">Mogok, Myanmar </div>
+                        <a id="location" target="_blank" href="https://goo.gl/maps/JvBLiygMft5KhzQPA">
+                            <div class="details-info">Mogok, Myanmar <span>Click here to veiw in google map</span>
+                            </div>
+                        </a>
+
+
                     </div>
                 </div>
             </div>
-    
+
             <div data-aos="fade-up" class="about-text">
                 <div class="about-content">
                     <div id="about-description">
                         <div class="text show-more-height">
-    
-    
+
+
                             Hello! My name is Nandar. I am a
                             dedicated and efficient full-stuck developer responsible for designing and developing user
                             interactions
@@ -131,25 +136,25 @@
                         </div>
                         <div class="show-more">(Show More)</div>
                     </div>
-    
-    
+
+
                     <div class="contact-content">
                         <div class="contact-info">
                             <div class="contact-icon">
                                 <i class="uil uil-phone"></i>
                             </div>
                             <div class="contact-text">+959960160802</div>
-    
+
                         </div>
                         <div class="contact-info">
                             <div class="contact-icon">
                                 <i class="uil uil-envelope"></i>
                             </div>
                             <div class="contact-text">nanda.dev.mgk@gmail.com</div>
-    
+
                         </div>
                         <a target="_blank" href="./assets/pdf/resume.pdf"><button class="resume">Resume</button></a>
-    
+
                     </div>
                 </div>
             </div>
@@ -203,33 +208,6 @@
         </div>
 
     </section>
-    <!-- Services -->
-    <section class="services" id="services">
-        <div class="heading">
-            <h2>Services</h2>
-            <span>Our Services</span>
-        </div>
-        <div class="services-content">
-            <!-- Box 1 -->
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web <br>Development</h3>
-                <a href="#">Learn More</a>
-            </div>
-            <!-- Box 2 -->
-            <div class="services-box">
-                <i class='bx bx-server'></i>
-                <h3>Backend <br>Development</h3>
-                <a href="#">Learn More</a>
-            </div>
-            <!-- Box 3 -->
-            <div class="services-box">
-                <i class='bx bx-brush'></i>
-                <h3>UI/UX <br>Design</h3>
-                <a href="#">Learn More</a>
-            </div>
-        </div>
-    </section>
     <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
         <div class="heading">
@@ -260,6 +238,31 @@
     </section>
     <!-- Contact -->
     <section class="contact" id="contact">
+        <div class="contact-container">
+            <form class="form" action="https://formsubmit.co/5aa9fcc8ff2ba952bdd6ae1c0280ab9a" method="POST">
+                <h1 class="heading">Message me</h1>
+                <div class="sub-heading">Please feel free to contact me any time. Will get back to you as soon as I can.
+                </div>
+                <div class="contact-grid">
+                    <input type="hidden" name="_subject" value="New email for web!">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Full name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-group" id="message">
+                        <textarea name="message" id="message" placeholder="Your message goes here"></textarea>
+                    </div>
+                    <input type="hidden" name="_next" value="https://nandar.netlify.app/thanks.html">
+                    <button type="submit" class="send-button">Send message</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- <section class="contact" id="contact">
         <div class="heading">
             <h2>Contact</h2>
             <span>Connect With Us</span>
@@ -271,32 +274,19 @@
                 <input type="email" name="email" required>
                 <input type="hidden" name="_next" value="https://nandar.netlify.app/thanks.html">
                 <button type="submit">Send</button>
-           </form>
-           
-           
-            <!-- <form action="">
-                <input type="text" placeholder="Your Name">
-                <input type="email" name="" id="" placeholder="Your Email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
-                <input type="button" value="Send" class="contact-button">
-            </form> -->
+            </form>
+
         </div>
-    </section>
+    </section> -->
+
     <!-- Footer -->
     <div class="footer">
-        <h2>Farin</h2>
-        <div class="footer-social">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
 
+        <div>
+            <p>Designed & Built by <span>Nandar</span> </p>
         </div>
+    </div>
 
-    </div>
-    <!-- Copyright -->
-    <div class="copyright">
-        <p>&#169; CarpoolVenom All Right Reserved.</p>
-    </div>
 
 
     <!-- Aos Animaiton js -->
